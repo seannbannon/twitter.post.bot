@@ -1,0 +1,22 @@
+{
+  "name": "twitter.post.bot",
+  "version": "1.0.0",
+  "description": "A bot that posts to twitter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seannbannon/twitter.post.bot.git"
+  },
+  "author": "Sean Bannon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seannbannon/twitter.post.bot/issues"
+  },
+  "homepage": "https://github.com/seannbannon/twitter.post.bot#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
+}
