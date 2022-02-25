@@ -1,12 +1,12 @@
-var twit = require('twit/lib/twitter');
-var config = require('./config.js');
+const twit = require('twit');
+const config = require('./config.js');
 
-var Twitter = new twit(config);
+const Twitter = new twit(config);
 
-var messages = ["Hello World!", "How is your Day", "Did you know I am a robot?"];
-var messageLocation = 0;
+let messages = ["Hello World!", "War is Bad", "No Citizen Anywhere in the Entire World Wants a War"];
+let messageLocation = 0;
 
-var writeTweet = function() {
+const writeTweet = function() {
     Twitter.post('statuses/update', {
         status: messages[messageLocation]
     }, function(err, data, response) {
@@ -14,7 +14,5 @@ var writeTweet = function() {
     });
     messageLocation += 1;
 }
-
-writeTweet()
 
 setInterval(writeTweet, 30000);
